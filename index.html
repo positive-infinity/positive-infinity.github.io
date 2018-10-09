@@ -1,319 +1,66 @@
+---
+---
 <!DOCTYPE html>
-<html lang="en">
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+	<meta name="keywords" content="{{ site.keywords }}">
+	<meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="combo.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  {% if site.favicon %}<link rel="shortcut icon" href="{{ site.favicon }}" type="image/x-icon">{% endif %}
+  {% if site.touch_icon %}<link rel="apple-touch-icon" href="{{ site.touch_icon }}">{% endif %}
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="main">
 
-  <head>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122929795-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-122929795-1');
-    </script>
+    <nav><ul>
+      {% for node in site.posts reversed %}
+        {% capture id %}{{ node.id | remove:'/' | downcase }}{% endcapture %}
+        <li class="p-{{id}}"><a href="#{{id}}">{{node.title}}</a></li>
+      {% endfor %}
+    </ul></nav>
 
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="POSITIVE INFINITY | Search and find with top-notch apps. Nearby and anywhere in the world!">
-    <meta name="author" content="POSITIVE INFINITY">
+    {% for page in site.posts reversed %}
+      {% capture id %}{{ page.id | remove:'/' | downcase }}{% endcapture %}
+      <div id="{{id}}" class="section p-{{id}}">
+        {% if page.icon %}
+        <div class="subtlecircle sectiondivider imaged">
+          <img src="{{page.icon}}" alt="section icon" />
+          <h5 class="icon-title">{{ page.title }}</h5>
+        </div>
+        {% elsif page.fa-icon %}
+        <div class="subtlecircle sectiondivider faicon">
+          <span class="fa-stack">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-{{ page.fa-icon }} fa-stack-1x"></i>
+          </span>
+          <h5 class="icon-title">{{ page.title }}</h5>
+        </div>
+        {% endif %}
+        <div class="container {{ page.style }}">
+          {{ page.content }}
+        </div>
+      </div>
+    {% endfor %}
 
-    <title>POSITIVE INFINITY</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="device-mockups/device-mockups.min.css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/new-age.min.css" rel="stylesheet">
-    <link href="css/disclosure-faq.css" rel="stylesheet">
-    
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div id="footer" class="section text-white">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#apps">Apps</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#faq">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#promo">Promo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+        {% capture foottext %} {% include footer.md %} {% endcapture %}
+        {{ foottext | markdownify }}
       </div>
-    </nav>
+    </div>
+  </div>
 
-    <header class="masthead">
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-lg-7 my-auto">
-            <div class="header-content mx-auto">
-              <h1 class="mb-5" align="center">Search and find with top-notch apps<br><br>Nearby and anywhere in the world</h1>
-              <div class="badges" align="center">
-                <a href="https://play.google.com/store/apps/dev?id=5604259480781805867" target="_blank" align="center"><img src="img/google-play-badge.svg" align="center" width="50%" alt=""></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5 my-auto">
-            <div class="device-container">
-              <img src="img/deviceshots.png" class="img-fluid" alt="">            
-            </div>
-          </div>
-        </div>
-      </div> 
-    </header>
-    
-    <section class="features" id="apps">
-      <div class="container">
-        <div class="section-heading text-center">
-          <h2>Apps</h2>
-          <p class="text-muted">Welcome to our finder apps! What are you searching for?<br>We got the right apps to find ATMs, banks, gas stations, supermarkets, toilets, playgrounds, attractions and more!</p>
-          <p class="text-muted">Try out the ones below and visit the <a href="https://play.google.com/store/apps/dev?id=5604259480781805867" target="_blank">Play Store</a> to find many more!</p>
-          <hr>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 my-auto">
-            <div class="device-container">
-              <img src="img/tagcloud.png" class="img-fluid" alt="">     
-            </div>
-          </div>
-          <div class="col-lg-8 my-auto">
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                      <a href="https://play.google.com/store/apps/details?id=de.pnpq.atmlocator" target="_blank" align="center">
-                        <img src="img/icon_atmlocator.png" class="img-fluid" alt=""> 
-                        <h3>ATM Locator</h3>
-                        <p class="text-muted">ATMs nearby and anywhere in the world!</p>
-                      </a>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                      <a href="https://play.google.com/store/apps/details?id=de.pnpq.fuellocator" target="_blank" align="center">
-                        <img src="img/icon_fuellocator.png" class="img-fluid" alt=""> 
-                        <h3>Fuel Locator</h3>
-                        <p class="text-muted">Gas stations wherever you are!</p>
-                      </a>
-                  </div>
-                </div>                
-              </div>
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                      <a href="https://play.google.com/store/apps/details?id=de.pnpq.shoplocator" target="_blank" align="center">
-                        <img src="img/icon_shoplocator.png" class="img-fluid" alt=""> 
-                        <h3>Shop Locator</h3>
-                        <p class="text-muted">Supermarkets, shops and discount stores!</p>
-                      </a>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                      <a href="https://play.google.com/store/apps/details?id=de.pnpq.toiletlocator" target="_blank" align="center">
-                        <img src="img/icon_toiletlocator.png" class="img-fluid" alt=""> 
-                        <h3>Toilet Locator</h3>
-                        <p class="text-muted">Toilettes near your location and anywhere in the world!</p>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="download bg-primary text-center" id="features">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Features</h2>
-            <p class="text-muted">View search results in a list or on a map. Switch to SAT view. Configure the number of results. Search for more details online. Report errornous or missing entries.<br>Free! Without any ads! Try it out now!</p>
-            <p class="text-muted">Coming soon: Opening hours, accessibility and much more!</p>
-              <img src="img/puzzle.png" class="img-fluid" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="download text-center" style="background: #f2f2f2;" id="faq">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 mx-auto">
-              <h2 class="section-heading">FAQ</h2>
-              <dl class="faq">
-                <dt>
-                  <button aria-expanded="false" aria-controls="faq1_desc">
-                    What can I find using your apps?
-                  </button>
-                </dt>
-                <dd>
-                  <p id="faq1_desc" class="desc">                    
-                        Currently, we offer dedicated apps to find ATMs, toilets, playgrounds, parking lots, tourist attractions, gas stations, supermarkets, fast food restaurants,
-                        pharmacies and churches. For a complete overview check out our <a href="https://play.google.com/store/apps/dev?id=5604259480781805867" target="_blank">App Page on Google Play</a>.
-                        If you miss an app, please let us know!                      
-                  </p>
-                </dd>
-                <dt>
-                  <button aria-expanded="false" aria-controls="faq2_desc">
-                    Some apps seem to display information regarding accessibility. Could you please explain the symbols?
-                  </button>
-                </dt>
-                <dd>
-                  <p id="faq2_desc" class="desc">
-                    That's right. Wheelchair accessibility information is availabe for some apps, e.g. in our toilet finder app. There are three stages of accessibility to indicate
-                    if a particular location is suitable to be used with a wheelchair (or similar mobility devices):<br/><br/>
-                    <img src="img/wheelchair_yes.png"> Wheelchairs have full unrestricted access, i.e. the entry and the rooms are stepless.<br/><br/>
-                    <img src="img/wheelchair_limited.png"> Wheelchairs have partial access, i.e. the entry may have a step not higher than the width of a hand and the most important rooms should be accessible.<br/><br/>
-                    <img src="img/wheelchair_no.png"> Wheelchairs have no unrestricted access, i.e. the location might be accessible by stairs only.
-                  </p>
-                </dd>
-                <dt>
-                  <button aria-expanded="false" aria-controls="faq3_desc">
-                    Are the apps free?
-                  </button>
-                </dt>
-                <dd>
-                  <p id="faq3_desc" class="desc">
-                    Yes! Our philosophy is to offer the apps for free and without any annoying ads! There are neither full-screen ads nor ad banners blocking screen space.
-                    Still, all the main functionality is availabe without havin to pay. That is, searching near your location (wherever you are), a map with satellite option, navigation to locations and more.
-                    If you like the app, you may unlock some additional features and support our further development by purchasing the PRO version for only 0,99€ (price may vary a bit depending on your local currency). 
-                  </p>
-                </dd>                
-              </dl>
-              <p class="text-muted">The FAQ section is currently being extended. Your question has not been answered yet? Please <a href="mailto:positive.infinity.development@gmail.com?subject=Apps">contact us</a>!</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    <section class="download bg-primary text-center" id="promo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 mx-auto">
-            <h2 class="section-heading">Promo</h2>
-            <p class="text-muted">The promo campaign has officially ended. However, if you still got an app version which is eligible for a promo code, you may still get 
-                                  <b>25% off</b> for a limited period of time! Please use the following code and enjoy the app:</p>
-            <p class="text-muted" style="font-size:25px; border:5px; border-style:solid; border-color:#81b294; padding: 1em;"><b>POSINF25</b></p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="cta-content">
-        <div class="container">
-          <!--<h2>Stop waiting.<br>Start building.</h2>-->
-          <!--<a href="#contact" class="btn btn-outline btn-xl js-scroll-trigger">Let's Get Started!</a>-->
-        </div>
-      </div>
-      <div class="overlay"></div>
-    </section>
-
-    <section class="contact bg-primary" id="contact">
-      <div class="container">
-        <h2>We
-          <i class="fas fa-heart"></i>
-          new friends!</h2>        
-        <ul class="list-inline list-social">
-          <li class="list-inline-item social-google-play">
-              <a href="https://play.google.com/store/apps/dev?id=5604259480781805867" target="_blank">
-                <i class="fab fa-google-play"></i>
-              </a>
-          </li>
-          <li class="list-inline-item social-facebook">
-            <a href="https://www.facebook.com/POSITIVE-INFINITY-2220128271559938" target="_blank">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-google-plus">
-            <a href="https://plus.google.com/115992760937385241320" target="_blank">
-              <i class="fab fa-google-plus"></i>
-            </a>
-          </li>
-          <li class="list-inline-item social-email">
-              <a href="mailto:positive.infinity.development@gmail.com?subject=Apps">
-                <i class="fas fa-at"></i>
-              </a>
-            </li>
-        </ul>
-      </div>
-    </section>
-
-    <footer>
-      <div class="container">
-        <p>&copy; POSITIVE INFINITY 2018</p>
-        <!--
-        <br/>
-        <h3>Impressum</h3>        
-        <p>POSITIVE INFINITY • Postfach 10010 • 22777 Hamburg • positive.infinity.development@gmail.com</p>
-        -->
-        <!--
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">FAQ</a>
-          </li>
-        </ul>
-        -->
-      </div>
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/new-age.min.js"></script>
-    <script src="js/disclosureButton.js"></script>
-
-  </body>
-
+{% include analytics.html %}
+</body>
+<script src="site.js"></script>
 </html>
