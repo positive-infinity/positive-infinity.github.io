@@ -1,1 +1,1 @@
-POSITIVE INFINITY &mdash; 2018 &mdash; [Impressum](/impressum.html)
+POSITIVE INFINITY &mdash; 2018 &mdash; [Impressum](/impressum.html) &mdash; [Datenschutzerklärung](/privacy.html)
