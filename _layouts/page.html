@@ -11,9 +11,10 @@
     <div class="headerBackground">
         <div class="container">
         {% include header.html %}
-            <article class="page markdown-body">
+            <div class="page markdown-body">
                 {{ content }}
-            </article>
+            </div>
+            {% include footer.html %}    
         </div>
         {% include appstoreimages.html %}        
         {% include analytics.html %}
