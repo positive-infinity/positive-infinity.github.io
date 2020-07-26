@@ -27,3 +27,6 @@ After you sent your feedback, we will correct the databases as soon as possible.
 
 ## How can I search via the map?
 Besides searching by place or address via the automcomplete search field it is also possible to search directly from the map. To do so, switch to the map view, position the map anywhere you'd like to search and select "Search here" from the main menu (three dot overflow).
+
+## Is it possible to donate?
+Yes, since some users asked for the possibility to donate money independently of PRO version purchases, we added a donate button to the bottom of this page. The money obtained from donations is solely spent to cover fix costs (like servers, co-working rent and so on) and helps us very much to keep everything going and actively push further development. We really appriciate your support! If you have any questions regarding donations, do not hesitate to contacting us.

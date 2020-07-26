@@ -1,7 +1,15 @@
 <footer>
+	
 	<p class="footerText">Made by {% if site.your_link %}<a href="{{ site.your_link }}">{% endif %}{{ site.your_name }}{% if site.your_link %}</a>{% endif %}{% if site.your_city %} in the <a href="https://en.wikipedia.org/wiki/Bielefeld_Conspiracy">non-existent</a> city of {{ site.your_city }}{% endif %}</p>
+	<div class="donateButton">
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+		<input type="hidden" name="cmd" value="_s-xclick" />
+		<input type="hidden" name="hosted_button_id" value="XQZQA4ADTPDW4" />
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+		<img alt="" border="0" src="https://www.paypal.com/en_DE/i/scr/pixel.gif" width="1" height="1" />
+	</form>
+	</div>
 	<div class="footerIcons">
-
 		{% if site.facebook_username %}
 			<a href="https://facebook.com/{{ site.facebook_username }}">
 				<span class="fa-stack fa-1x">

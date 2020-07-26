@@ -601,7 +601,16 @@ nav > ul li a:active {
 	
 } 
 
-
+// donate button
+.donateButton {
+	color: $footer-text-color;
+	display: block;
+	line-height: 1.5;
+	width: 100%;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 30px;
+}
 
 // Footer
 
@@ -619,11 +628,11 @@ footer {
 	width: 100%;
 	text-align: center;
 	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 }
 
 .footerIcons {
-	padding-bottom: 70px;
+	padding-bottom: 30px;
 	display: flex;
 	flex: 0 0 100%;
 	justify-content: center;
@@ -664,6 +673,17 @@ footer {
 
 @media only screen and (max-width: 992px) {
 	
+	// donate button
+	.donateButton {
+		color: $footer-text-color;
+		display: block;
+		line-height: 1.5;
+		width: 100%;
+		text-align: center;
+		padding-top: 0px;
+		padding-bottom: 30px;
+}
+
 	.footerText {
 		color: $footer-text-color;
 		display: block;
@@ -671,11 +691,11 @@ footer {
 		width: 100%;
 		text-align: center;
 		padding-top: 54px;
-		padding-bottom: 61px;
+		padding-bottom: 30px;
 	}
 	
 	.footerIcons {
-		padding-bottom: 70px;
+		padding-bottom: 30px;
 		display: flex;
 	}
 	
