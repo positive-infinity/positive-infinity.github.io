@@ -16,7 +16,7 @@ Wheelchair accessibility information is availabe for some apps, e.g. in our toil
 ![alt text](../assets/wheelchair_no.png) Wheelchairs have no unrestricted access, i.e. the location might be accessible by stairs only.<br>
 
 ## In which countries do the apps work?
-The apps works anywhere in the world. There are two exceptions: Cash Group Locator and Cash Pool Locator do show results in Germany only as the corresponding banking groups are based in Germany.
+The apps work anywhere in the world. There are two exceptions: Cash Group Locator and Cash Pool Locator do show results in Germany only as the corresponding banking groups are based in Germany.
 
 ## Is it possible to report erronous or missing places?
 Of course! Many users constantly help to improve the databases by reporting newly added or closed locations from all over the world. Therefore, the data used by the apps is up-to-date and gets improved continuously. There are mainly two ways to report updates:
