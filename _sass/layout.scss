@@ -88,6 +88,22 @@
 		grid-column: 1/-1;
 	}
 	
+}
+
+.widepage {
+	max-width: $content-width;
+	grid-area: c;
+	justify-self: center;
+	margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+
+	.widepage {
+		margin-top: 0px;
+		grid-column: 1/-1;
+	}
+	
 } 
 
 header {
