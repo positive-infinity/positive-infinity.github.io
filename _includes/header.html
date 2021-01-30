@@ -15,19 +15,23 @@
 	</div>
 	<nav class="scroll">
 		<ul>
-			{% if page.url != '/' %}
-				<li><a href="../#features" target="_self">Features</a></li>
+			{% if page.play_url != '' %}
+				<li><a style="font-size:1.5em" href="{{ page.play_url }}">{{ page.title }}</a></li>
 			{% else %}
-				<li><a href="#features" target="_self">Features</a></li>
-			{% endif %}	
-			<li><a href="https://play.google.com/store/apps/dev?id=5604259480781805867">Apps</a></li>
-			{% for page in site.pages %}
-				{% if page.include_in_header == true %}
-				<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+				{% if page.url != '/' %}
+					<li><a href="../#features" target="_self">Features</a></li>
+				{% else %}
+					<li><a href="#features" target="_self">Features</a></li>
+				{% endif %}	
+				<li><a href="https://play.google.com/store/apps/dev?id=5604259480781805867">Apps</a></li>
+				{% for page in site.pages %}
+					{% if page.include_in_header == true %}
+					<li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+					{% endif %}
+				{% endfor %}
+				{% if site.presskit_download_link %}
+					<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
 				{% endif %}
-			{% endfor %}
-			{% if site.presskit_download_link %}
-				<li><a href="{{ site.presskit_download_link }}">Press Kit</a></li>
 			{% endif %}
 		</ul>
 	</nav>
