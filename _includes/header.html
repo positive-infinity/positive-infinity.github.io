@@ -16,7 +16,7 @@
 	<nav class="scroll">
 		<ul>
 			{% if page.play_url %}
-				<li><a style="font-size:1.5em" href="{{ page.play_url }}">{{ page.title }}</a></li>
+				<li style="text-align: right; font-size: 1.5em">{{ page.title }}<br><div style="font-size: 0.7em">{{ page.descr }}</div></li>
 			{% else %}
 				{% if page.url != '/' %}
 					<li><a href="../#features" target="_self">Features</a></li>
