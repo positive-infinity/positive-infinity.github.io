@@ -62,7 +62,7 @@ features                                  :
     fontawesome_icon_name                 : directions
 
   - title                                 : Support for tablets and watches
-    description                           : The app works well on phones as well as on tablets and watches running Wear OS.
+    description                           : The app works equally well on phones as on tablets. The latest version now also supports watches running Wear OS.
     fontawesome_icon_name                 : tablet
 
   - title                                 : Accessibility
