@@ -70,6 +70,77 @@ features                                  :
     fontawesome_icon_name                 : wheelchair
 
 
+# App List                                Edit, add or remove apps to be presented.
+apps                                      :
+
+  - title                                 : ATM Locator
+    description                           : Find cash machines anywhere in the world.
+    id                                    : atmlocator
+    
+  - title                                 : Attraction Locator
+    description                           : Sight seeing via app.
+    id                                    : attractionlocator
+
+  - title                                 : Bakery Locator
+    description                           : Bakeries nearby and only a click away.
+    id                                    : bakerylocator
+    
+  - title                                 : Camping Locator
+    description                           : Find camping places and caravan spaces wherever you are.
+    id                                    : campinglocator
+
+  - title                                 : Cash Group Locator
+    description                           : Locate ATMs of the german Cash Group banking association.
+    id                                    : cashgrouplocator
+    
+  - title                                 : Cash Pool Locator
+    description                           : Locate ATMs of the german Cash Pool banking association.
+    id                                    : cashpoollocator
+    
+  - title                                 : Church Locator
+    description                           : Find local churches.
+    id                                    : churchlocator
+    
+  - title                                 : Fast Food Locator
+    description                           : Find fast food restaurants and grills for a quick snack.
+    id                                    : fflocator
+    
+  - title                                 : Gas Station & Fuel Locator
+    description                           : Gas stations always in sight with this app.
+    id                                    : fuellocator
+    
+  - title                                 : History Locator
+    description                           : Explore historic places nearby and learn something new every day.
+    id                                    : historylocator
+    
+  - title                                 : Hotel Locator
+    description                           : Hotels and guesthouses wherever you are.
+    id                                    : hotellocator
+    
+  - title                                 : Parking Locator
+    description                           : Find parking spaces and garages.
+    id                                    : parkinglocator
+    
+  - title                                 : Pharmacy Locator
+    description                           : Find pharmacies, drugstores and chemists with this app.
+    id                                    : pharmacylocator
+        
+  - title                                 : Playground Locator
+    description                           : Explore unknown playgrounds around you.
+    id                                    : playgroundlocator
+    
+  - title                                 : Restaurant Locator
+    description                           : Find restaurants nearby and anywhere in the world.
+    id                                    : restaurantlocator
+    
+  - title                                 : Supermarket Locator
+    description                           : Find supermarkets and grocery stores anyplace.
+    id                                    : shoplocator
+    
+  - title                                 : Toilet Locator
+    description                           : Find public restrooms. Including accessibility information.
+    id                                    : toiletlocator
+
 
 # Theme Settings
 topbar_color                              : "#000000"

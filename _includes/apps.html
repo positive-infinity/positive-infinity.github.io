@@ -1,0 +1,26 @@
+<div class="apps" id="apps">
+
+    {% for app in site.apps %}
+
+    {% if app.title %}
+    <div class="app">
+        <div>            
+            <span class="fa-stack fa-1x" style="text-align: center; display: block;">
+                <i class="iconBack fas fa-circle fa-stack-2x"></i>
+                <img class=" iconTop fas fa-circle fa-stack-1x" style="object-fit: contain; max-height: 100%;" src="../assets/icons/{{ app.id }}.png">
+            </span>
+        </div>
+        <div class="appText">
+            <h3>
+                <a target="_self" href="/{{ app.id }}">{{ app.title }}</a>
+            </h3>
+            <p>
+                {{ app.description }}
+            </p>
+        </div>
+    </div>
+    {% endif %}
+
+    {% endfor %}
+
+</div>
