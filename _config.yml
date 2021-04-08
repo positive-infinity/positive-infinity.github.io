@@ -72,7 +72,11 @@ features                                  :
 
 # App List                                Edit, add or remove apps to be presented.
 apps                                      :
-
+  
+  - title                                 : Around Me
+    description                           : Find everything around you.
+    id                                    : aroundme
+    
   - title                                 : ATM Locator
     description                           : Find cash machines anywhere in the world.
     id                                    : atmlocator
