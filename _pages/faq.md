@@ -8,6 +8,11 @@ permalink: /faq.html
 
 # Frequently Asked Questions
 
+## Where can I see photos for locations and how can I add or improve pictures by myself?
+Photos of locations are generally available in the Details view (single click on a list item or long-press an item and select Details). In the Details view choose the Images tab to view pictures for the current location. Please be aware that images may not be available for all locations but you can add your own (see below). Typically, the street-level images used in our apps are part of a sequence, i.e. you may use the shown arrows to navigate forward or backward to even improve the sight.
+
+If images for a location are not yet available or you'd like to improve the current imagery, you can do so at any time. Our apps use [Mapillary](https://www.mapillary.com/), an open data street-level imagery platform to which anybody can contribute. To add images, just download the [Mapillary Android app](https://play.google.com/store/apps/details?id=com.mapillary.app) which makes it easy to capture and upload images. As soon as the images have been processed on the Mapillary servers they will also be available to be show within our apps.
+
 ## What do the wheelchair symbols mean?
 Wheelchair accessibility information is availabe for some apps, e.g. in our toilet finder app. There are three stages of accessibility to indicate if a particular location is suitable to be used with a wheelchair (or similar mobility devices):
 
