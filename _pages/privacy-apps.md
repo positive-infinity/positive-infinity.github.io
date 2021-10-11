@@ -21,7 +21,10 @@ This page is used to inform you regarding our policies with the collection, use,
 If you choose to use our apps, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the apps. We will not use or share your information with anyone except as described in this Privacy Policy.
 
 # Information collection and use
-When using our apps, through the use of third-party services we may use and collect certain personally identifiable information about you, depending on your device settings and your consent. The third-party services we use, their purpose within the app and the information which is collected through these services are described in the following:
+When using our apps, through the use of third-party services provided by Google we may use and collect certain personally identifiable information about you, depending on your device settings and your consent. General information about how Google's products use data may be found under the following link:
+* [https://policies.google.com/technologies/partner-sites](https://policies.google.com/technologies/partner-sites)
+
+The third-party services we use, their purpose within the app and the information which is collected through these services are described in the following:
 #### AdMob
 Our apps use AdMob, Googles Mobile Advertising platform, to display ads in the basic (free) version. Depending on your Google account settings, AdMob may collect and use personally identifiable information to serve personalized ads, i.e.
 * online identifiers, including Android IDs, cookies and unique device identifiers for advertising (Google Advertiser ID, unique Advertising ID, IDFVs/Android IDs and similar)
