@@ -38,7 +38,7 @@ You may choose to generally opt-out of personal advertising for your Google acco
 * [https://policies.google.com/technologies/ads](https://policies.google.com/technologies/ads)
 
 #### Firebase Analytics / Firebase Performance Monitoring
-Our apps use Google Firebase Analytics abd Firebase Performance Monitoring to gain insights about how the apps are used and how we may improve them to enhance the user experience. Information collected by Firebase may also be used to improve the performance of our apps, for example to reduce the time until search results are available. Google Analytics for Firebase may collect and use personally identifiable information, i.e.
+Our apps use Google Firebase Analytics and Firebase Performance Monitoring to gain insights about how the apps are used and how we may improve them to enhance the user experience. Information collected by Firebase may also be used to improve the performance of our apps, for example to reduce the time until search results are available. Google Analytics for Firebase may collect and use personally identifiable information, i.e.
 * online identifiers, including Android IDs, cookies and unique device identifiers for advertising (Google Advertiser ID, unique Advertising ID, IDFVs/Android IDs and similar)
 * IP addresses
 * Firebase installation IDs
