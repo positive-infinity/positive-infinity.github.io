@@ -14,7 +14,7 @@ app_name                                  : POSITIVE INFINITY                   
 app_price                                 : Android Apps                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_description                           : Search and find ATMs, toilets, gas stations, playgrounds and much more.<br>Nearby and anywhere in the world.
 
-google_analytics_key                      :
+google_analytics_key                      : UA-122929795-1
 
 # Information About Yourself
 your_name                                 : POSITIVE INFINITY                                
