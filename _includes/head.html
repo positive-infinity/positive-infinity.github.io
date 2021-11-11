@@ -1,5 +1,4 @@
 <head>
-	{% if site.google_analytics_key %}
 	<!-- Global site tag (gtag.js) - Google Analytics without cookies -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122929795-1"></script>
 	<script>
@@ -7,9 +6,8 @@
   		function gtag(){dataLayer.push(arguments);}
   		gtag('js', new Date());
 
-  		gtag('config', '{{ site.google_analytics_key }}', { client_storage: 'none' });
+  		gtag('config', 'UA-122929795-1', { client_storage: 'none' });
 	</script>
-	{% endif %}
 
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
