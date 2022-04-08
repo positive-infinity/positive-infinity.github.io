@@ -20,6 +20,9 @@ Wheelchair accessibility information is availabe for some apps, e.g. in our toil
 ![alt text](../assets/wheelchair_limited.png) Wheelchairs have partial access, i.e. the entry may have a step not higher than the width of a hand and the most important rooms should be accessible.<br/>
 ![alt text](../assets/wheelchair_no.png) Wheelchairs have no unrestricted access, i.e. the location might be accessible by stairs only.<br>
 
+## Can I switch over from the legacy Cash Group PRO app to the up-to-date version of the app
+Yes. Historically, there are two Cash Group apps: the legacy one (a paid app for which you needed to pay on install time) and the current one (with in-app billing). The paid legacy Cash Group App is not updated anymore. However, if you own the legacy app you may simply download and install the current one, purchase the PRO features and get the price refunded. To do so, just search for "Cash Group Geldautomaten" in Google Play, download the app, purchase the PRO features using in-app billing and after that send us the purchase ID so we can refund your purchase.
+
 ## In which countries do the apps work?
 The apps work anywhere in the world. There are two exceptions: Cash Group Locator and Cash Pool Locator do show results in Germany only as the corresponding banking groups are based in Germany.
 
