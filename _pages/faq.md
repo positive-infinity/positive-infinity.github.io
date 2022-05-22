@@ -20,6 +20,10 @@ Wheelchair accessibility information is availabe for some apps, e.g. in our toil
 ![alt text](../assets/wheelchair_limited.png) Wheelchairs have partial access, i.e. the entry may have a step not higher than the width of a hand and the most important rooms should be accessible.<br/>
 ![alt text](../assets/wheelchair_no.png) Wheelchairs have no unrestricted access, i.e. the location might be accessible by stairs only.<br>
 
+## What do the colored fuel prices mean?
+Fuel prices are currently shwon only in Germany. For a quick overview, the prices are colored based on their value: The cheapest third is colored in green, the middle third is colored in orange and the most expensive third is colored in red. Additionally, the cheapest price is marked in bold.
+![alt text](../assets/fuelprices.png)
+For example, if the minumun fuel price for E5 is 1,60€ and the maximum price is 1,90€, then prices between 1,60€ and 1,70€ are marked green, prices between 1,70€ and 1,80€ are marked orange and prices between 1,80€ and 1,90€ are marked red. 
 ## Can I switch over from the legacy Cash Group PRO app to the up-to-date version of the app
 Yes. Historically, there are two Cash Group apps: the legacy one (a paid app for which you needed to pay on install time) and the current one (with in-app billing). The paid legacy Cash Group App is not updated anymore. However, if you own the legacy app you may simply download and install the current one, purchase the PRO features and get the price refunded. To do so, just search for "Cash Group Geldautomaten" in Google Play, download the app, purchase the PRO features using in-app billing and after that send us the purchase ID so we can refund your purchase.
 
