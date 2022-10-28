@@ -1,9 +1,9 @@
 ---
 layout: page
-title: FAQ
-include_in_header: true
+title: FAQ FoodCompass
+include_in_header: false
 include_in_footer: false
-permalink: /faq.html
+permalink: /faq-foodcompass.html
 ---
 
 # Frequently Asked Questions
