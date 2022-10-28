@@ -203,7 +203,6 @@ exclude:
 collections:
   pages:
     output: true
-    permalink: /:path/
 
 # Markdown rendering
 markdown: kramdown
