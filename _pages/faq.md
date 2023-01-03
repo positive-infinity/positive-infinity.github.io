@@ -8,6 +8,9 @@ permalink: /faq.html
 
 # Frequently Asked Questions
 
+## What other apps are there to find places around me?
+Plenty! Check out our other apps at our [Homepage](https://positive-infinity.software/) or directyl in [Google Play](https://play.google.com/store/apps/dev?id=5604259480781805867).
+
 ## Where can I see photos for locations and how can I add or improve pictures by myself?
 Photos of locations are generally available in the Details view (single click on a list item or long-press an item and select Details). In the Details view choose the Images tab to view pictures for the current location. Please be aware that images may not be available for all locations but you can add your own (see below). Typically, the street-level images used in our apps are part of a sequence, i.e. you may use the shown arrows to navigate forward or backward to even improve the sight.
 
