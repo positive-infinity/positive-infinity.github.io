@@ -37,8 +37,8 @@ Our apps use AdMob, Googles Mobile Advertising platform, to display ads in the b
 You may choose to generally opt-out of personal advertising for your Google account by visiting [https://www.google.com/settings/ads](https://www.google.com/settings/ads). Please be aware that some of the information listed above may still be used also for non-personalized ads, e.g. to prevent and detect fraud. Further details about which data Google uses to serve ads may be found under the following link:
 * [https://policies.google.com/technologies/ads](https://policies.google.com/technologies/ads)
 
-#### Firebase Analytics / Firebase Performance Monitoring
-Our apps use Google Firebase Analytics and Firebase Performance Monitoring to gain insights about how the apps are used and how we may improve them to enhance the user experience. Information collected by Firebase may also be used to improve the performance of our apps, for example to reduce the time until search results are available. Google Analytics for Firebase may collect and use personally identifiable information, i.e.
+#### Firebase Analytics / Firebase Crashlytics / Firebase Performance Monitoring
+Our apps use Google Firebase Analytics, Firebase Crashlytics and Firebase Performance Monitoring to gain insights about how the apps are used and how we may improve them to enhance the user experience. Information collected by Firebase may also be used to improve the performance of our apps, for example to reduce the time until search results are available. Analytics, Crashlytics and Performance Monitoring may collect and use personally identifiable information, i.e.
 * online identifiers, including Android IDs, cookies and unique device identifiers for advertising (Google Advertiser ID, unique Advertising ID, IDFVs/Android IDs and similar)
 * IP addresses
 * Firebase installation IDs
