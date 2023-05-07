@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Item Compass App Privacy Policy
+title: Food Compass App Privacy Policy
 include_in_header: false
 include_in_footer: false
-permalink: /privacy-item-compass.html
+permalink: /privacy-food-compass.html
 ---
 
 # Contact information
