@@ -3,6 +3,7 @@ layout: page
 title: Impressum
 include_in_header: false
 include_in_footer: true
+noindex: true
 permalink: /impressum.html
 ---
 

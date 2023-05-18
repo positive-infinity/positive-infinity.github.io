@@ -3,6 +3,7 @@ layout: page
 title: App Privacy Policy
 include_in_header: false
 include_in_footer: false
+noindex: true
 permalink: /privacy-apps.html
 ---
 

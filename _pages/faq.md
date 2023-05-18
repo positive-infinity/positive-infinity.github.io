@@ -3,6 +3,7 @@ layout: page
 title: FAQ
 include_in_header: true
 include_in_footer: false
+noindex: false
 permalink: /faq.html
 ---
 
