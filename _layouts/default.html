@@ -73,14 +73,16 @@
                         </div>
                         <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
-                                <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                                <a href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
+                            {% endif %}
+                            {% if site.appstore_link %}
+                                <a href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
                             {% endif %}
                         </div>
                     </div>
                     {% include features.html %}
                     {% include apps.html %}
                     {% include footer.html %}
-                    {% include appstoreimages.html %}
                 </div>
             </div>
         </div>
