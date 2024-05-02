@@ -1,3 +1,4 @@
+facebook.com, 2590434291195999, DIRECT, c3e20eee3f780d68
 applovin.com, de254e9a563dde11073f055bb03fb627, DIRECT
 algorix.co, 60532, RESELLER, 5b394c12fea27a1d
 contextweb.com , 562615, RESELLER, 89ff185a4c4e857c
