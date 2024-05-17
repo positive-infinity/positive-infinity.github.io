@@ -17,7 +17,7 @@ Phone: +4952144815307<br/>
 E-Mail: [positive.infinity.development@gmail.com](mailto:positive.infinity.development@gmail.com)
 
 # General information
-This page is used to inform you regarding our policies with the collection, use, and disclosure of Personal Information in our Android apps.
+This page is used to inform you regarding our policies with the collection, use, and disclosure of Personal Information in our apps.
 
 If you choose to use our apps, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the apps. We will not use or share your information with anyone except as described in this Privacy Policy.
 
@@ -26,22 +26,11 @@ When using our apps, through the use of third-party services provided by Google 
 * [https://policies.google.com/technologies/partner-sites](https://policies.google.com/technologies/partner-sites)
 
 The third-party services we use, their purpose within the app and the information which is collected through these services are described in the following:
-#### AdMob
-Our apps use AdMob, Googles Mobile Advertising platform, to display ads in the basic (free) version. Depending on your Google account settings, AdMob may collect and use personally identifiable information to serve personalized ads, i.e.
-* online identifiers, including Android IDs, cookies and unique device identifiers for advertising (Google Advertiser ID, unique Advertising ID, IDFVs/Android IDs and similar)
-* IP addresses
-* device identifiers
-* client identifiers 
-* location data
-* usage data
-
-You may choose to generally opt-out of personal advertising for your Google account by visiting [https://www.google.com/settings/ads](https://www.google.com/settings/ads). Please be aware that some of the information listed above may still be used also for non-personalized ads, e.g. to prevent and detect fraud. Further details about which data Google uses to serve ads may be found under the following link:
-* [https://policies.google.com/technologies/ads](https://policies.google.com/technologies/ads)
-
 #### Firebase Analytics / Firebase Crashlytics / Firebase Performance Monitoring
 Our apps use Google Firebase Analytics, Firebase Crashlytics and Firebase Performance Monitoring to gain insights about how the apps are used and how we may improve them to enhance the user experience. Information collected by Firebase may also be used to improve the performance of our apps, for example to reduce the time until search results are available. Analytics, Crashlytics and Performance Monitoring may collect and use personally identifiable information, i.e.
 * online identifiers, including Android IDs, cookies and unique device identifiers for advertising (Google Advertiser ID, unique Advertising ID, IDFVs/Android IDs and similar)
 * IP addresses
+* Location data, e.g. approximate geolocation
 * Firebase installation IDs
 * Analytics App Instance IDs
 
